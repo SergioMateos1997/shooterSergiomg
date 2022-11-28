@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <font color="black">
+      <center><h1>The Shooter</h1></center>
+      <center><h2>Opinion</h2></center>
+      <ul>
+        <li><a href="../web1.html">Inicio</a></li>
+        <li><a href="Director.html">Director</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li>
+          <a href="plataformasdestreaming.html">Plataformas de Streaming</a>
+        </li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="">Opinion</a></li>
+        <li><a href="link.html">Links</a></li>
+        <li><a href="La Serie.html">The shooter, la serie</a></li>
+      </ul>
+
+      <center>
+        <form action="contact.php" method="post">
+          <div class="elem-group">
+            <label for="name">Alias</label>
+            <input
+              type="text"
+              id="name"
+              name="visitor_name"
+              placeholder="Nombre de ejemplo"
+              pattern="[A-Z\sa-z]{3,20}"
+              required
+            />
+          </div>
+          <div class="elem-group">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="visitor_email"
+              placeholder="ejemplo@email.com"
+              required
+            />
+          </div>
+          <div class="elem-group">
+            <label for="department-selection">Pon tu cualificacion</label>
+            <select
+              id="department-selection"
+              name="concerned_department"
+              required
+            >
+              <option value="">Selecciona una opción</option>
+              <option value="technical support">1 Estrella</option>
+              <option value="technical support">2 Estrellas</option>
+              <option value="technical support">3 Estrellas</option>
+              <option value="technical support">4 Estrellas</option>
+              <option value="technical support">5 Estrellas</option>
+              <option value="technical support">6 Estrellas</option>
+            </select>
+          </div>
+          
+          <div class="elem-group">
+            <label for="message">Escríbenos</label>
+            <textarea
+              id="message"
+              name="visitor_message"
+              placeholder="Escribe tu mensaje aquí."
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </center>
+    </font>
+  </body>
+</html>
